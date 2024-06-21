@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+#main_container{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./assets/trail2.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+#card_container{
+    /* filter: blur(2px); */
+    height: 450px;
+    width: 400px;
+    border: 1px black solid;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 980px;
+    margin-bottom: 100px;
+    transition: all 0s 0s ease-in-out;
+    animation-name: praveen;
+    animation-duration: 3s;
+    animation-timing-function:linear;
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+}
+@keyframes praveen{
+    from{
+        /* margin-top: -1400px; */
+        filter: opacity(0);
+    }
+    to{
+        filter: opacity(1);
+        /* margin-top: 0px; */
+    }   
+}
+#card_container:hover{
+    background-color:  rgba(71, 85, 91, 0.4);
+    height: 460px;
+    width: 412px;
+}
+form{
+    /* border: red solid; */
+    display: grid;
+    place-items: center;
+    gap: 5px;
+    width: 100%;
+    flex-basis: 15%;
+    margin-top: 10px;
+}
+#img_container{
+    width: 100%;
+    flex-basis: 65%;
+    display: grid;
+    place-items: center;
+    /* position: relative; */
+    /* border: red solid; */
+}
+[alt="Not_Loaded"]{
+    height: 200px;
+    width: 200px;
+    /* position: absolute; */
+}
+h3{
+    font-size: 20px;
+    color: black;
+    font-family: "Josefin Sans", sans-serif;
+    padding: 8px 15px;
+    border-radius: 15px;
+    background-color: rgba(135, 206, 235,0.4);
+    transition: all 2s 0s linear;
+}
+input[type="text"]{
+    border: 2px solid;  
+    font-size: 15px;
+    height: 40px;
+    width: 280px;
+    border-radius: 25px;
+    background-color: rgba(71, 85, 91, 0.2);
+    color: white;
+}
+input[type="submit"]:hover{
+    background-color: white ;
+}
+input[type="submit"]{
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 700;
+    /* color: white; */
+    background-color: rgba(135, 206, 235,0.4);
+    /* letter-spacing: 1px; */
+    font-family: "Josefin Sans", sans-serif;
+    border: none;
+}
+#temparature_humidity{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    flex-basis: 20%;
+    background-color: rgba(72, 110, 98, 0.5);
+    border-radius: 20px;
+    font-size: 13px;
+    /* border: red solid; */
+    color: white;
+    letter-spacing: 0.8px;
+    margin: 0px 10px;
+}
+#temparature,#humidity{
+    height: 100%;
+    flex-basis: 50%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Libre Baskerville", serif;
+    /* border: 2px solid red; */
+}
+aside>h1{
+    letter-spacing: 0.5px;
+}
